@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap");
+
+:root {
+    --primary-color: #96bb7c;
+    --text-color: #848282;
+    --title-color: #184d47;
+    --body-color: #f9f9f9;
+    --hover-btn: #7d9b67;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Lato;
+    min-height: 100vh;
+    background-color: var(--body-color);
+}
+
+
+.btn-custom {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: var(--hover-btn);
+}
+
+.desc-item {
+    color: var(--title-color);
+    font-size: 14px;
+}
+
+.head-store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.title-item {
+    color: var(--title-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 10px 10px;
+    width: 100%;
+    position: sticky;
+    top: 100%;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    color: var(--title-color);
+}
+
+#content {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.container.low-bg {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .head-store {
+        flex-direction: column;
+    }
+}
